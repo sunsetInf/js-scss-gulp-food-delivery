@@ -1,0 +1,69 @@
+@-webkit-keyframes order-slide {
+    from {
+        right: -408px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes order-slide {
+    from {
+        right: -408px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@-webkit-keyframes order-slide-out {
+    to {
+        right: -408px;
+    }
+}
+
+@keyframes order-slide-out {
+    to {
+        right: -408px;
+    }
+}
+
+@-webkit-keyframes container-compression {
+    to {
+        max-width: calc(100% - 22px - 408px);
+    }
+}
+
+@keyframes container-compression {
+    to {
+        max-width: calc(100% - 22px - 408px);
+    }
+}
+
+@-webkit-keyframes container-compression-out {
+    to {
+        max-width: 100%;
+    }
+}
+
+@keyframes container-compression-out {
+    to {
+        max-width: 100%;
+    }
+}
+
+@-webkit-keyframes order-item-vanish {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes order-item-vanish {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
