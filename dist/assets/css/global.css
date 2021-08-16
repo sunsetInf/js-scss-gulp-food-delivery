@@ -680,40 +680,24 @@ main {
 }
 
 @-webkit-keyframes order-slide-out {
-    from {
-        right: 0;
-    }
-
     to {
         right: -408px;
     }
 }
 
 @keyframes order-slide-out {
-    from {
-        right: 0;
-    }
-
     to {
         right: -408px;
     }
 }
 
 @-webkit-keyframes container-compression {
-    from {
-        max-width: 100%;
-    }
-
     to {
         max-width: calc(100% - 22px - 408px);
     }
 }
 
 @keyframes container-compression {
-    from {
-        max-width: 100%;
-    }
-
     to {
         max-width: calc(100% - 22px - 408px);
     }

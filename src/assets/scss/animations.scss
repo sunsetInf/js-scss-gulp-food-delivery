@@ -1,28 +1,28 @@
 @import "vars";
 
 @keyframes order-slide {
-    to {
-        right: 0;
-    }
+  to {
+    right: 0;
+  }
 }
 @keyframes order-slide-out {
-    to {
-        right: -$orderWidth;
-    }
+  to {
+    right: -$orderWidth;
+  }
 }
 @keyframes container-compression {
-    to {
-        max-width: calc(100% - 22px - #{$orderWidth});
-    }
+  to {
+    max-width: calc(100% - 22px - #{$orderWidth});
+  }
 }
 @keyframes container-compression-out {
-    to {
-        max-width: 100%;
-    }
+  to {
+    max-width: 100%;
+  }
 }
 @keyframes order-item-vanish {
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
