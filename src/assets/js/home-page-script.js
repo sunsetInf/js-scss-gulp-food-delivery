@@ -91,10 +91,11 @@ function moveBlocks(direction) {
     orderSidenav.style.animation =
       "order-slide .7s ease-in-out .2s 1 normal forwards";
   } else if (direction === "reverse") {
-    container.style.animation =
-      "container-compression-out 1s ease-in-out .2s 1 normal forwards";
+    orderSidenav.style.right = "0";
     orderSidenav.style.animation =
-      "order-slide-out .7s ease-in-out .2s 1 normal forwards";
+      "order-slide-out .7s ease-in-out 0s 1 normal forwards";
+    container.style.animation =
+      "container-compression-out .7s ease-in-out 0s 1 normal forwards";
   }
 }
 //set delete-option for order-item
