@@ -78,24 +78,26 @@ for (item of dishesItem) {
 //set exit option for order-exit-button
 const orderExitBtn = document.querySelector(".order__exit-btn");
 orderExitBtn.onclick = function () {
-  orderSidenav.style.animationDirection = "reverse";
-  container.style.animationDirection = "reverse";
+  moveBlocks("reverse");
   setTimeout(function () {
     orderBody.innerHTML = "";
-  }, 700);
+  }, 800);
 };
 function moveBlocks(direction) {
   if (direction === "normal") {
     container.style.animation =
       "container-compression 1s ease-in-out .2s 1 normal forwards";
+
+    orderSidenav.style.right = "-408px";
     orderSidenav.style.animation =
       "order-slide .7s ease-in-out .2s 1 normal forwards";
   } else if (direction === "reverse") {
     orderSidenav.style.right = "0";
     orderSidenav.style.animation =
       "order-slide-out .7s ease-in-out 0s 1 normal forwards";
+
     container.style.animation =
-      "container-compression-out .7s ease-in-out 0s 1 normal forwards";
+      "container-compression-out .7s ease-in-out 0s 1 reverse forwards";
   }
 }
 //set delete-option for order-item
@@ -112,11 +114,6 @@ function removeItem(input) {
   setTimeout(function () {
     if (orderBody.childElementCount == 2) {
       moveBlocks("reverse");
-    } else {
-      const otherItems = document.querySelectorAll("[itemnumber]");
-      for (i = 3; i < otherItems.length; i++) {
-        if (otherItems[i].hasAttribute("onclick")) continue;
-      }
     }
     setTimeout(function () {
       items[0].remove();
