@@ -6,17 +6,11 @@
     }
 }
 @keyframes order-slide-out {
-    from{
-        right: 0;
-    }
     to {
         right: -$orderWidth;
     }
 }
 @keyframes container-compression {
-    from{
-        max-width: 100%;
-    }
     to {
         max-width: calc(100% - 22px - #{$orderWidth});
     }
