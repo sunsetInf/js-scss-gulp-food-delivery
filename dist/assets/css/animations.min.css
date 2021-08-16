@@ -9,6 +9,8 @@
     right: -408px; } }
 
 @keyframes container-compression {
+  from {
+    max-width: 100%; }
   to {
     max-width: calc(100% - 22px - 408px); } }
 

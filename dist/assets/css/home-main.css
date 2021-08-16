@@ -44,7 +44,7 @@ main {
     height: 15px;
     outline: none;
     border: none;
-    background: url(../img/search-icon.png);
+    background: url(../images/search-icon.png);
     margin-right: -29px;
     z-index: 0;
 }
@@ -120,6 +120,10 @@ main {
 
 .dishes__inner {
     margin-left: -14px;
+    margin-top: 30px;
+}
+
+.dishes__block {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -130,7 +134,6 @@ main {
     justify-content: flex-start;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 30px;
 }
 
 .dishes__item {

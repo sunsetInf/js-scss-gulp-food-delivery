@@ -1,14 +1,4 @@
-// const dishesBlocks = document.querySelectorAll(".dishes__block");
-// for(block of dishesBlocks) {
-//   if(block==dishesBlocks[0]) continue;
-//   block.style.display = "flex";
-//   block.style.flexWrap = "wrap";
-//   block.style.flexDirection = "row";
-//   block.style.justifyContent = "flex-start";
-//   block.style.alignItems = "center";
-//   block.style.marginTop = "30px";
-// }
-//добавляет текущую дату под названием ресторана
+//adds current dateTime to header
 const weekArr = {
     1: "Monday",
     2: "Tuesday",
@@ -42,18 +32,18 @@ var currentDate =
   new Date().getFullYear();
 const headerTime = document.querySelector(".header__time");
 headerTime.textContent = currentDate;
-//----------------------------------------------------------------------------------------------------
-//выдвигает правый блок на экран и добавляет в него блюда
+
+//push out right order-block on the screen and add dishes to it
 const orderSidenav = document.querySelector(".order");
 const container = document.querySelector(".container");
 const dishesItem = document.querySelectorAll(".dishes__item");
 const orderBody = document.querySelector(".order__table tbody");
-var itemNumber = 1;
 for (item of dishesItem) {
   item.onclick = function () {
-    //добавляем выбранное блюдо в блок заказов
+    //add selected dish to order-block
+
     orderBody.innerHTML += `
-                <tr itemnumber="${itemNumber}" class="order__table-item">
+                <tr class="order__table-item">
                   <td class="order__item-info">
                     <img src="assets/images/dish-1.jpg" alt="">
                     <div class="order__info-wrapper">
@@ -68,56 +58,59 @@ for (item of dishesItem) {
                     $ 4,58
                   </td>
                 </tr>
-                <tr itemnumber="${itemNumber}" class="order__addition">
+                <tr class="order__addition">
                   <td class="order__notice" colspan="2">
                     <input type="text" placeholder="Please, just a little bit spicy only.">
                   </td>
                   <td class="order__delete-btn">
                     <div class="order__delete-btn-inner">
-                      <input onclick="removeItem(this)" itemnumber="${itemNumber}" class="order__delete-input" type="button">
+                      <input onclick="removeItem(this)" class="order__delete-input" type="button">
                     </div>
                   </td>
                 </tr>
-                <!-- next item -->
+                <!-- item-border -->
         `;
-    itemNumber++;
-    //сжимаем контейнер и выдвигаем правый блок заказов
-    container.style.animation =
-      "container-compression 1s ease-in-out .2s 1 normal forwards";
 
-    orderSidenav.style.right = "-408px";
-    orderSidenav.style.animation =
-      "order-slide .7s ease-in-out .2s 1 normal forwards";
+    //compress container and push out right order-block
+    moveBlocks("normal");
   };
 }
-//order exit button
+//set exit option for order-exit-button
 const orderExitBtn = document.querySelector(".order__exit-btn");
 orderExitBtn.onclick = function () {
-  orderSidenav.style.right = "0";
-  orderSidenav.style.animation =
-    "order-slide-out .7s ease-in-out 0s 1 normal forwards";
-  container.style.animation =
-    "container-compression-out .7s ease-in-out 0s 1 reverse forwards";
-
+  orderSidenav.style.animationDirection = "reverse";
+  container.style.animationDirection = "reverse";
   setTimeout(function () {
     orderBody.innerHTML = "";
   }, 700);
 };
-//order remove item
+function moveBlocks(direction) {
+  if (direction === "normal") {
+    container.style.animation =
+      "container-compression 1s ease-in-out .2s 1 normal forwards";
+    orderSidenav.style.animation =
+      "order-slide .7s ease-in-out .2s 1 normal forwards";
+  } else if (direction === "reverse") {
+    container.style.animation =
+      "container-compression-out 1s ease-in-out .2s 1 normal forwards";
+    orderSidenav.style.animation =
+      "order-slide-out .7s ease-in-out .2s 1 normal forwards";
+  }
+}
+//set delete-option for order-item
 function removeItem(input) {
-  const currentItem = input.getAttribute("itemnumber");
-  const items = document.querySelectorAll(`[itemnumber="${currentItem}"]`);
+  const items = [
+    input.parentElement.parentElement.parentElement,
+    input.parentElement.parentElement.parentElement.previousSibling
+      .previousSibling,
+  ];
   items[0].style.animation =
     "order-item-vanish .3s ease-in-out 0s 1 normal forwards";
   items[1].style.animation =
     "order-item-vanish .3s ease-in-out 0s 1 normal forwards";
   setTimeout(function () {
     if (orderBody.childElementCount == 2) {
-      orderSidenav.style.right = "0";
-      orderSidenav.style.animation =
-        "order-slide-out .7s ease-in-out 0s 1 normal forwards";
-      container.style.animation =
-        "container-compression-out .7s ease-in-out 0s 1 reverse forwards";
+      moveBlocks("reverse");
     } else {
       const otherItems = document.querySelectorAll("[itemnumber]");
       for (i = 3; i < otherItems.length; i++) {

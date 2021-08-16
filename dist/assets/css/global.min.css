@@ -293,12 +293,14 @@ main {
 
 .dishes__inner {
   margin-left: -14px;
+  margin-top: 30px; }
+
+.dishes__block {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  margin-top: 30px; }
+  align-items: center; }
 
 .dishes__item {
   cursor: pointer;
@@ -527,6 +529,8 @@ main {
     right: -408px; } }
 
 @keyframes container-compression {
+  from {
+    max-width: 100%; }
   to {
     max-width: calc(100% - 22px - 408px); } }
 
