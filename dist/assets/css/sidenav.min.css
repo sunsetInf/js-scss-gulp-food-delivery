@@ -1,4 +1,5 @@
 .sidenav {
+  margin-top: 20px;
   position: fixed;
   max-width: 104px;
   border-radius: 16px;
@@ -25,10 +26,16 @@
 
 .sidenav__menu-item {
   text-align: center;
-  padding: 13px 24px 13px 13px;
+  padding: 13px 13px 13px 13px;
   width: 92px;
   margin-left: auto;
   background-color: #1F1D2B; }
+  .sidenav__menu-item img {
+    width: 56px;
+    height: 56px; }
+  .sidenav__menu-item__inner {
+    width: 56px;
+    height: 56px; }
   .sidenav__menu-item--selected {
     background: #252836;
     border-radius: 12px 0px 0px 12px; }

@@ -41,10 +41,10 @@ main {
   display: flex;
   font-weight: 600;
   margin-top: 24px;
-  border-bottom: 1px solid #393c49;
-  padding-bottom: 13px; }
+  border-bottom: 1px solid #393c49; }
 
 .header__dishes-item {
+  padding-bottom: 13px;
   cursor: pointer; }
   .header__dishes-item + .header__dishes-item {
     margin-left: 32px; }
@@ -92,45 +92,40 @@ main {
     border-width: 7px 6px 0 6px;
     border-color: #ffffff transparent transparent transparent; }
 
-.dishes__inner {
-  margin-left: -14px;
-  margin-top: 30px; }
-
-.dishes__block {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center; }
-
-.dishes__item {
-  cursor: pointer;
-  margin: 24px 14px 36px 14px;
-  text-align: center;
-  background: #1f1d2b;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.dishes__img-wrapper {
-  margin-top: -36px; }
-  .dishes__img-wrapper img {
-    overflow: hidden;
-    display: block;
-    border-radius: 50%; }
-
-.dishes__title {
-  font-weight: 500;
-  line-height: 130%; }
-
-.dishes__price {
-  margin-top: 8px; }
-
-.dishes__amount {
-  color: #abbbc2;
-  margin-top: 4px; }
-
-.dishes__descr {
-  width: 144px;
-  margin: 16px 24px 24px; }
+.dishes {
+  max-width: 1100px; }
+  .dishes__inner {
+    margin-left: -14px;
+    margin-top: 30px; }
+  .dishes__block-inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+  .dishes__item {
+    cursor: pointer;
+    margin: 38px 14px 36px 14px;
+    text-align: center;
+    background: #1f1d2b;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .dishes__img-wrapper {
+    margin-top: -36px; }
+    .dishes__img-wrapper img {
+      overflow: hidden;
+      display: block;
+      border-radius: 50%; }
+  .dishes__title {
+    font-weight: 500;
+    line-height: 130%; }
+  .dishes__price {
+    margin-top: 8px; }
+  .dishes__amount {
+    color: #abbbc2;
+    margin-top: 4px; }
+  .dishes__descr {
+    width: 144px;
+    margin: 16px 24px 24px; }

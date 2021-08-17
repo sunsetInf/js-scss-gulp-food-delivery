@@ -147,6 +147,7 @@ body {
   margin: 24px 24px 0 13px; }
 
 .sidenav {
+  margin-top: 20px;
   position: fixed;
   max-width: 104px;
   border-radius: 16px;
@@ -173,10 +174,16 @@ body {
 
 .sidenav__menu-item {
   text-align: center;
-  padding: 13px 24px 13px 13px;
+  padding: 13px 13px 13px 13px;
   width: 92px;
   margin-left: auto;
   background-color: #1F1D2B; }
+  .sidenav__menu-item img {
+    width: 56px;
+    height: 56px; }
+  .sidenav__menu-item__inner {
+    width: 56px;
+    height: 56px; }
   .sidenav__menu-item--selected {
     background: #252836;
     border-radius: 12px 0px 0px 12px; }
@@ -240,10 +247,10 @@ main {
   display: flex;
   font-weight: 600;
   margin-top: 24px;
-  border-bottom: 1px solid #393c49;
-  padding-bottom: 13px; }
+  border-bottom: 1px solid #393c49; }
 
 .header__dishes-item {
+  padding-bottom: 13px;
   cursor: pointer; }
   .header__dishes-item + .header__dishes-item {
     margin-left: 32px; }
@@ -291,48 +298,43 @@ main {
     border-width: 7px 6px 0 6px;
     border-color: #ffffff transparent transparent transparent; }
 
-.dishes__inner {
-  margin-left: -14px;
-  margin-top: 30px; }
-
-.dishes__block {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center; }
-
-.dishes__item {
-  cursor: pointer;
-  margin: 24px 14px 36px 14px;
-  text-align: center;
-  background: #1f1d2b;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.dishes__img-wrapper {
-  margin-top: -36px; }
-  .dishes__img-wrapper img {
-    overflow: hidden;
-    display: block;
-    border-radius: 50%; }
-
-.dishes__title {
-  font-weight: 500;
-  line-height: 130%; }
-
-.dishes__price {
-  margin-top: 8px; }
-
-.dishes__amount {
-  color: #abbbc2;
-  margin-top: 4px; }
-
-.dishes__descr {
-  width: 144px;
-  margin: 16px 24px 24px; }
+.dishes {
+  max-width: 1100px; }
+  .dishes__inner {
+    margin-left: -14px;
+    margin-top: 30px; }
+  .dishes__block-inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+  .dishes__item {
+    cursor: pointer;
+    margin: 38px 14px 36px 14px;
+    text-align: center;
+    background: #1f1d2b;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .dishes__img-wrapper {
+    margin-top: -36px; }
+    .dishes__img-wrapper img {
+      overflow: hidden;
+      display: block;
+      border-radius: 50%; }
+  .dishes__title {
+    font-weight: 500;
+    line-height: 130%; }
+  .dishes__price {
+    margin-top: 8px; }
+  .dishes__amount {
+    color: #abbbc2;
+    margin-top: 4px; }
+  .dishes__descr {
+    width: 144px;
+    margin: 16px 24px 24px; }
 
 .order {
   height: 100vh;
@@ -437,18 +439,40 @@ main {
 
 .order__item-quantity {
   vertical-align: top; }
-  .order__item-quantity input {
-    margin-top: 24px;
-    outline: none;
-    background: #2d303e;
-    border: 1px solid #393c49;
-    border-radius: 8px;
-    width: 48px;
-    height: 48px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    color: white; }
+  .order__item-quantity__inner {
+    display: inline-flex; }
+    .order__item-quantity__inner input {
+      margin-top: 24px;
+      outline: none;
+      background: #2d303e;
+      border: 1px solid #393c49;
+      border-radius: 8px;
+      width: 48px;
+      height: 48px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 16px;
+      color: white;
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      appearance: textfield; }
+      .order__item-quantity__inner input::-webkit-inner-spin-button, .order__item-quantity__inner input::-webkit-outer-spin-button {
+        -webkit-appearance: none; }
+    .order__item-quantity__inner button {
+      outline: none;
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: none;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+      margin: 0;
+      position: relative; }
+      .order__item-quantity__inner button::before, .order__item-quantity__inner button::after {
+        display: inline-block;
+        position: absolute; }
 
 .order__item-price {
   vertical-align: top;

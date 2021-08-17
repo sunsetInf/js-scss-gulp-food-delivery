@@ -101,18 +101,40 @@
 
 .order__item-quantity {
   vertical-align: top; }
-  .order__item-quantity input {
-    margin-top: 24px;
-    outline: none;
-    background: #2d303e;
-    border: 1px solid #393c49;
-    border-radius: 8px;
-    width: 48px;
-    height: 48px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    color: white; }
+  .order__item-quantity__inner {
+    display: inline-flex; }
+    .order__item-quantity__inner input {
+      margin-top: 24px;
+      outline: none;
+      background: #2d303e;
+      border: 1px solid #393c49;
+      border-radius: 8px;
+      width: 48px;
+      height: 48px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 16px;
+      color: white;
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      appearance: textfield; }
+      .order__item-quantity__inner input::-webkit-inner-spin-button, .order__item-quantity__inner input::-webkit-outer-spin-button {
+        -webkit-appearance: none; }
+    .order__item-quantity__inner button {
+      outline: none;
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: none;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+      margin: 0;
+      position: relative; }
+      .order__item-quantity__inner button::before, .order__item-quantity__inner button::after {
+        display: inline-block;
+        position: absolute; }
 
 .order__item-price {
   vertical-align: top;

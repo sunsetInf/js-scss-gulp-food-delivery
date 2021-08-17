@@ -1,38 +1,3 @@
-//adds current dateTime to header
-const weekArr = {
-    1: "Monday",
-    2: "Tuesday",
-    3: "Wednesday",
-    4: "Thursday",
-    5: "Friday",
-    6: "Saturday",
-    7: "Sunday",
-  },
-  monthArr = {
-    1: "January",
-    2: "February",
-    3: "March",
-    4: "April",
-    5: "May",
-    6: "June",
-    7: "July",
-    8: "August",
-    9: "September",
-    10: "October",
-    11: "November",
-    12: "December",
-  };
-var currentDate =
-  weekArr[new Date().getDay()] +
-  ", " +
-  new Date().getDate() +
-  " " +
-  monthArr[new Date().getMonth() + 1] +
-  " " +
-  new Date().getFullYear();
-const headerTime = document.querySelector(".header__time");
-headerTime.textContent = currentDate;
-
 //push out right order-block on the screen and add dishes to it
 const orderSidenav = document.querySelector(".order");
 const container = document.querySelector(".container");
@@ -52,7 +17,11 @@ for (item of dishesItem) {
                     </div>
                   </td>
                   <td class="order__item-quantity">
-                    <input type="text" value="1">
+                    <div class="order__item-quantity__inner">
+                      <button></button>
+                      <input type="number" value="1">
+                      <button></button>
+                    </div>
                   </td>
                   <td class="order__item-price">
                     $ 4,58
@@ -73,6 +42,29 @@ for (item of dishesItem) {
 
     //compress container and push out right order-block
     moveBlocks("normal");
+    //set the new price of order
+    const subtotal = document.querySelector(".order__subtotal");
+    var subtotalValue = parseFloat(
+      subtotal.textContent.substring(1, subtotal.textContent.length)
+    );
+
+    //query to last order-item ti find his price
+    var desiredItem = document.querySelectorAll(".order__table-item");
+    desiredItem = desiredItem[desiredItem.length - 1];
+    //query to price of the last order-item
+    var desiredPrice = desiredItem.querySelector(".order__dish-price");
+
+    desiredPrice = parseFloat(
+      desiredPrice.textContent.substring(1, desiredPrice.textContent.length)
+    );
+
+    //add the found price to subtotal
+    subtotalValue += desiredPrice;
+    subtotal.textContent = "$" + subtotalValue.toFixed(2);
+
+    //set the quantity-input settings
+    const quantity = desiredItem.querySelector(".order__item-quantity input");
+    quantity.textContent.onchange = function() { alert(true); }
   };
 }
 //set exit option for order-exit-button

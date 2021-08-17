@@ -136,7 +136,12 @@
     vertical-align: top;
 }
 
-.order__item-quantity input {
+.order__item-quantity__inner {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.order__item-quantity__inner input {
     margin-top: 24px;
     outline: none;
     background: #2d303e;
@@ -148,6 +153,34 @@
     font-weight: 500;
     font-size: 16px;
     color: white;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.order__item-quantity__inner input::-webkit-inner-spin-button, .order__item-quantity__inner input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.order__item-quantity__inner button {
+    outline: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.order__item-quantity__inner button::before, .order__item-quantity__inner button::after {
+    display: inline-block;
+    position: absolute;
 }
 
 .order__item-price {
