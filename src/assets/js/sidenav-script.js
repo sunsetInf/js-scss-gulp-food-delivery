@@ -1,11 +1,18 @@
+//settings for selected/around links
+const linkRegEx = /\w+[-]*\w*.html/gm;
+var currentHref = window.location.href;
+currentHref = currentHref.match(linkRegEx)[0];
+
+var linkSelect = document.querySelector(`a.sidenav__menu-link[href="${currentHref}"]`);
+linkSelect = linkSelect.closest(".sidenav__menu-item");
+linkSelect.classList.add("sidenav__menu-item--selected");
+//SET "around select" class for around items
+linkSelect.previousElementSibling.classList.add("sidenav__menu-item--around-top-select");
+linkSelect.nextElementSibling.classList.add("sidenav__menu-item--around-bot-select");
+
+
 const sidenavLinks = document.querySelectorAll("a.sidenav__menu-link");
-
 for (link of sidenavLinks) {
-  const currentHref = window.location.href;
-  const linkHref = link.getAttribute("href").replace("#", "");
-  console.log(currentHref == linkHref);
-  // console.log(linkHref);
-
   // inserting the load-screen before folow to link
   link.addEventListener("click", function (e) {
     const href = e.target.parentNode.getAttribute("href");
