@@ -33,7 +33,7 @@ for (item of dishesItem) {
                   </td>
                   <td class="order__delete-btn">
                     <div class="order__delete-btn-inner">
-                      <input onclick="removeItem(this)" class="order__delete-input" type="button">
+                      <input onclick="removeItem(w)" class="order__delete-input" type="button">
                     </div>
                   </td>
                 </tr>

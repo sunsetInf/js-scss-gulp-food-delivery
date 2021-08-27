@@ -3,15 +3,15 @@
 @import "fonts";
 
 body {
-    background-color: $def;
-    color: white;
-    font-family: "Barlow", sans-serif;
-    font-size: 14px;
-    line-height: 140%;
+  background-color: $def;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
 }
 .container {
-    max-width: 1700px;
-    margin: 24px 24px 0 13px;
+  max-width: 1700px;
+  margin: 24px 24px 0 13px;
 }
 
 @import "sidenav";
