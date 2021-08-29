@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/css/global.min.css" />
     <link rel="stylesheet" href="assets/css/stats-style.min.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,11 +25,8 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    {{> sidenav }} 
-    {{> body }}
+    {{> sidenav }} {{> body }} {{> loadscreen }}
 
-    {{> loadscreen }}
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       type="text/javascript"

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/css/global.min.css" />
     <link rel="stylesheet" href="assets/css/stats-style.min.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,98 +26,147 @@
   </head>
   <body>
     <nav class="sidenav">
-      <div class="sidenav__rectangle"></div>
-      <ul class="sidenav__menu">
-        <li class="sidenav__menu-item sidenav__menu-item--logo">
-          <div class="menu-item__inner">
-            <a href="#" class="sidenav__menu-link">
-              <img src="assets/images/logo.png" alt="">
-            </a>
-          </div>
-        </li>
-        <li class="sidenav__menu-item">
-          <div class="menu-item__inner">
-            <a href="home-page.html" class="sidenav__menu-link">
-              <img src="assets/images/sidenav-home.png" alt="">
-            </a>
-          </div>
-        </li>
-        <li class="sidenav__menu-item">
-          <div class="menu-item__inner">
-            <a href="#" class="sidenav__menu-link">
-              <img src="assets/images/sadinav-special.png" alt="">
-            </a>
-          </div>
-        </li>
-        <li class="sidenav__menu-item">
-          <div class="menu-item__inner">
-            <a href="stats-page.html" class="sidenav__menu-link">
-              <img src="assets/images/sidenav-stats.png" alt="">
-            </a>
-          </div>
-        </li>
-        <li class="sidenav__menu-item">
-          <div class="menu-item__inner">
-            <a href="#" class="sidenav__menu-link">
-              <img src="assets/images/sidenav-messages.png" alt="">
-            </a>
-          </div>
-        </li>
-        <li class="sidenav__menu-item">
-          <div class="menu-item__inner">
-            <a href="#" class="sidenav__menu-link">
-              <img src="assets/images/sidenav-notifications.png" alt="">
-            </a>
-          </div>
-        </li>
-        <li class="sidenav__menu-item">
-          <div class="menu-item__inner">
-            <a href="#" class="sidenav__menu-link">
-              <img src="assets/images/sidenav-options.png" alt="">
-            </a>
-          </div>
-        </li>
-        <li class="sidenav__menu-item">
-          <div class="menu-item__inner">
-            <a href="#" class="sidenav__menu-link">
-              <img src="assets/images/sidenav-logout.png" alt="">
-            </a>
-          </div>
-        </li>
-    
-      </ul>
-    </nav>
-    
-    <script src="assets/js/sidenav-script.js"></script>    
-    
+  <div class="sidenav__rectangle"></div>
+  <ul class="sidenav__menu">
+    <li class="sidenav__menu-item sidenav__menu-item--logo">
+      <div class="menu-item__inner">
+        <a href="#" class="sidenav__menu-link">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="sidenav__menu-item">
+      <div class="menu-item__inner">
+        <a href="home-page.html" class="sidenav__menu-link">
+          <img src="assets/images/sidenav-home.png" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="sidenav__menu-item">
+      <div class="menu-item__inner">
+        <a href="#" class="sidenav__menu-link">
+          <img src="assets/images/sadinav-special.png" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="sidenav__menu-item">
+      <div class="menu-item__inner">
+        <a href="stats-page.html" class="sidenav__menu-link">
+          <img src="assets/images/sidenav-stats.png" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="sidenav__menu-item">
+      <div class="menu-item__inner">
+        <a href="#" class="sidenav__menu-link">
+          <img src="assets/images/sidenav-messages.png" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="sidenav__menu-item">
+      <div class="menu-item__inner">
+        <a href="#" class="sidenav__menu-link">
+          <img src="assets/images/sidenav-notifications.png" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="sidenav__menu-item">
+      <div class="menu-item__inner">
+        <a href="#" class="sidenav__menu-link">
+          <img src="assets/images/sidenav-options.png" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="sidenav__menu-item">
+      <div class="menu-item__inner">
+        <a href="#" class="sidenav__menu-link">
+          <img src="assets/images/sidenav-logout.png" alt="">
+        </a>
+      </div>
+    </li>
 
-    <div class="load-screen__wrapper">
-      <div class="load-screen">
-        <div class="load-screen__inner">
-          <span style="--i: 1"></span>
-          <span style="--i: 2"></span>
-          <span style="--i: 3"></span>
-          <span style="--i: 4"></span>
-          <span style="--i: 5"></span>
-          <span style="--i: 6"></span>
-          <span style="--i: 7"></span>
-          <span style="--i: 8"></span>
-          <span style="--i: 9"></span>
-          <span style="--i: 10"></span>
-          <span style="--i: 11"></span>
-          <span style="--i: 12"></span>
-          <span style="--i: 13"></span>
-          <span style="--i: 14"></span>
-          <span style="--i: 15"></span>
-          <span style="--i: 16"></span>
-          <span style="--i: 17"></span>
-          <span style="--i: 18"></span>
-          <span style="--i: 19"></span>
-          <span style="--i: 20"></span>
+  </ul>
+</nav>
+
+<script src="assets/js/sidenav-script.js"></script> 
+<main>
+  <div class="container">
+    <header class="header">
+      <div class="header__descr">
+        <h1 class="header__title">Dashboard</h1>
+        <time class="header__time">Tuesday, 2 Feb 2021</time>
+      </div>
+    </header>
+    <div class="general-data">
+      <div class="general-data__item">
+        <div class="item__inner">
+          <img
+            src="assets/images/data-item-1.png"
+            alt=""
+            class="general-data__item-img"
+          />
+          <div class="general-data__item-allowance general-data__item-allowance--up">+32.40%</div>
         </div>
+        <div class="general-data__item-total">$10,243.00</div>
+        <div class="general-data__item-total-name">Total Revenue</div>
+      </div>
+      <div class="general-data__item">
+        <div class="item__inner">
+          <img
+            src="assets/images/data-item-2.png"
+            alt=""
+            class="general-data__item-img"
+          />
+          <div class="general-data__item-allowance">-12.40%</div>
+        </div>
+        <div class="general-data__item-total">23,456</div>
+        <div class="general-data__item-total-name">Total Dish Ordered</div>
+      </div>
+      <div class="general-data__item">
+        <div class="item__inner">
+          <img
+            src="assets/images/data-item-3.png"
+            alt=""
+            class="general-data__item-img"
+          />
+          <div class="general-data__item-allowance">+2.40%</div>
+        </div>
+
+        <div class="general-data__item-total">1,234</div>
+        <div class="general-data__item-total-name">Total Customer</div>
       </div>
     </div>
-    
+  </div>
+</main>
+
+ <div class="load-screen__wrapper">
+  <div class="load-screen">
+    <div class="load-screen__inner">
+      <span style="--i: 1"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 3"></span>
+      <span style="--i: 4"></span>
+      <span style="--i: 5"></span>
+      <span style="--i: 6"></span>
+      <span style="--i: 7"></span>
+      <span style="--i: 8"></span>
+      <span style="--i: 9"></span>
+      <span style="--i: 10"></span>
+      <span style="--i: 11"></span>
+      <span style="--i: 12"></span>
+      <span style="--i: 13"></span>
+      <span style="--i: 14"></span>
+      <span style="--i: 15"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 17"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 19"></span>
+      <span style="--i: 20"></span>
+    </div>
+  </div>
+</div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       type="text/javascript"

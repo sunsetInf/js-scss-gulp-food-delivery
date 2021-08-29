@@ -1,0 +1,27 @@
+.general-data {
+  display: flex;
+  justify-content: space-between; }
+  .general-data__item {
+    background: #1F1D2B;
+    border-radius: 8px;
+    padding: 16px; }
+  .general-data .item__inner {
+    display: flex; }
+  .general-data__item-img {
+    background: #252836;
+    padding: 10px;
+    border-radius: 8px; }
+  .general-data__item-allowance {
+    margin-left: 12px;
+    align-self: center;
+    font-weight: 500;
+    font-size: 12px; }
+  .general-data__item-total {
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 28px; }
+  .general-data__item-total-name {
+    margin-top: 8px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #ABBBC2; }
