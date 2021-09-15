@@ -19,7 +19,8 @@ layout: stats-page-layout
             alt=""
             class="general-data__item-img"
           />
-          <div class="general-data__item-allowance general-data__item-allowance--up">+32.40%</div>
+          <div class="general-data__item-allowance">+32.40%</div>
+          <div class="general-data__item-allowance--up"></div>
         </div>
         <div class="general-data__item-total">$10,243.00</div>
         <div class="general-data__item-total-name">Total Revenue</div>
@@ -32,6 +33,7 @@ layout: stats-page-layout
             class="general-data__item-img"
           />
           <div class="general-data__item-allowance">-12.40%</div>
+          <div class="general-data__item-allowance--down"></div>
         </div>
         <div class="general-data__item-total">23,456</div>
         <div class="general-data__item-total-name">Total Dish Ordered</div>
@@ -44,11 +46,427 @@ layout: stats-page-layout
             class="general-data__item-img"
           />
           <div class="general-data__item-allowance">+2.40%</div>
+          <div class="general-data__item-allowance--up"></div>
         </div>
 
         <div class="general-data__item-total">1,234</div>
         <div class="general-data__item-total-name">Total Customer</div>
       </div>
+    </div>
+
+    <div class="order-report">
+      <div class="order-report__head">
+        <h6 class="order-report__title">Order Report</h6>
+        <button class="order-report__filter-btn btn" type="button">
+          Filter Order
+        </button>
+      </div>
+      <table class="order-report__table">
+        <tbody>
+          <!-- next order -->
+          <tr class="order-report__table-head">
+            <th>Customer</th>
+            <th>Menu</th>
+            <th>Total Payment</th>
+            <th>Status</th>
+          </tr>
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-1.png" alt="" />
+                </div>
+                <div class="order-report__name">Eren Jaegar</div>
+              </div>
+            </td>
+            <td class="order-report__menu">Spicy seasoned seafood noodles</td>
+            <td class="order-report__payment">$125</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--completed">
+                Completed
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-2.png" alt="" />
+                </div>
+                <div class="order-report__name">Reiner Braunn</div>
+              </div>
+            </td>
+            <td class="order-report__menu">Salted Pasta with mushroom sauce</td>
+            <td class="order-report__payment">$145</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--preparing">
+                Preparing
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-3.png" alt="" />
+                </div>
+                <div class="order-report__name">Levi Ackerman</div>
+              </div>
+            </td>
+            <td class="order-report__menu">
+              Beef dumpling in hot and sour soup
+            </td>
+            <td class="order-report__payment">$105</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--pending">
+                Pending
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-1.png" alt="" />
+                </div>
+                <div class="order-report__name">Eren Jaegar</div>
+              </div>
+            </td>
+            <td class="order-report__menu">Spicy seasoned seafood noodles</td>
+            <td class="order-report__payment">$125</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--completed">
+                Completed
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-2.png" alt="" />
+                </div>
+                <div class="order-report__name">Reiner Braunn</div>
+              </div>
+            </td>
+            <td class="order-report__menu">Salted Pasta with mushroom sauce</td>
+            <td class="order-report__payment">$145</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--preparing">
+                Preparing
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-3.png" alt="" />
+                </div>
+                <div class="order-report__name">Levi Ackerman</div>
+              </div>
+            </td>
+            <td class="order-report__menu">
+              Beef dumpling in hot and sour soup
+            </td>
+            <td class="order-report__payment">$105</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--pending">
+                Pending
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-1.png" alt="" />
+                </div>
+                <div class="order-report__name">Eren Jaegar</div>
+              </div>
+            </td>
+            <td class="order-report__menu">Spicy seasoned seafood noodles</td>
+            <td class="order-report__payment">$125</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--completed">
+                Completed
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-2.png" alt="" />
+                </div>
+                <div class="order-report__name">Reiner Braunn</div>
+              </div>
+            </td>
+            <td class="order-report__menu">Salted Pasta with mushroom sauce</td>
+            <td class="order-report__payment">$145</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--preparing">
+                Preparing
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-3.png" alt="" />
+                </div>
+                <div class="order-report__name">Levi Ackerman</div>
+              </div>
+            </td>
+            <td class="order-report__menu">
+              Beef dumpling in hot and sour soup
+            </td>
+            <td class="order-report__payment">$105</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--pending">
+                Pending
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-3.png" alt="" />
+                </div>
+                <div class="order-report__name">Levi Ackerman</div>
+              </div>
+            </td>
+            <td class="order-report__menu">
+              Beef dumpling in hot and sour soup
+            </td>
+            <td class="order-report__payment">$105</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--pending">
+                Pending
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-3.png" alt="" />
+                </div>
+                <div class="order-report__name">Levi Ackerman</div>
+              </div>
+            </td>
+            <td class="order-report__menu">
+              Beef dumpling in hot and sour soup
+            </td>
+            <td class="order-report__payment">$105</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--pending">
+                Pending
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-3.png" alt="" />
+                </div>
+                <div class="order-report__name">Levi Ackerman</div>
+              </div>
+            </td>
+            <td class="order-report__menu">
+              Beef dumpling in hot and sour soup
+            </td>
+            <td class="order-report__payment">$105</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--pending">
+                Pending
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-3.png" alt="" />
+                </div>
+                <div class="order-report__name">Levi Ackerman</div>
+              </div>
+            </td>
+            <td class="order-report__menu">
+              Beef dumpling in hot and sour soup
+            </td>
+            <td class="order-report__payment">$105</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--pending">
+                Pending
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-3.png" alt="" />
+                </div>
+                <div class="order-report__name">Levi Ackerman</div>
+              </div>
+            </td>
+            <td class="order-report__menu">
+              Beef dumpling in hot and sour soup
+            </td>
+            <td class="order-report__payment">$105</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--pending">
+                Pending
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-3.png" alt="" />
+                </div>
+                <div class="order-report__name">Levi Ackerman</div>
+              </div>
+            </td>
+            <td class="order-report__menu">
+              Beef dumpling in hot and sour soup
+            </td>
+            <td class="order-report__payment">$105</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--pending">
+                Pending
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-3.png" alt="" />
+                </div>
+                <div class="order-report__name">Levi Ackerman</div>
+              </div>
+            </td>
+            <td class="order-report__menu">
+              Beef dumpling in hot and sour soup
+            </td>
+            <td class="order-report__payment">$105</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--pending">
+                Pending
+              </div>
+            </td>
+          </tr>
+          <!-- next order -->
+          <tr class="order-report__order">
+            <td>
+              <div class="order-report__avatar-wrapper">
+                <div class="order-report__avatar">
+                  <img src="assets/images/order-report-avatar-3.png" alt="" />
+                </div>
+                <div class="order-report__name">Levi Ackerman</div>
+              </div>
+            </td>
+            <td class="order-report__menu">
+              Beef dumpling in hot and sour soup
+            </td>
+            <td class="order-report__payment">$105</td>
+            <td class="order-report__status-wrapper">
+              <div class="order-report__status order-report__status--pending">
+                Pending
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="additional-wrapper">
+    <div class="most-ordered additional">
+      <div class="most-ordered__head additional-head">
+        <div class="most-ordered__title additional-title">Most Ordered</div>
+        <select class="most-ordered__btn btn" name="dayMostOrdered" id="">
+          <option selected value="today">Today</option>
+          <option value="yesterday">Yesterday</option>
+          <option value="">Select Day</option>
+        </select>
+      </div>
+      <ul class="most-ordered__dish-list">
+        <li class="most-ordered__dish-item">
+          <img
+            src="assets/images/most-ordered-item-1.jpg"
+            alt=""
+            class="most-ordered__dish-item-img"
+          />
+          <div class="most-ordered__dish-info">
+            <div class="most-ordered__dish-name">
+              Spicy seasoned seafood noodles
+            </div>
+            <div class="most-ordered__dish-amount">200 dishes ordered</div>
+          </div>
+        </li>
+        <li class="most-ordered__dish-item">
+          <img
+            src="assets/images/most-ordered-item-1.jpg"
+            alt=""
+            class="most-ordered__dish-item-img"
+          />
+          <div class="most-ordered__dish-info">
+            <div class="most-ordered__dish-name">
+              Spicy seasoned seafood noodles
+            </div>
+            <div class="most-ordered__dish-amount">200 dishes ordered</div>
+          </div>
+        </li>
+        <li class="most-ordered__dish-item">
+          <img
+            src="assets/images/most-ordered-item-1.jpg"
+            alt=""
+            class="most-ordered__dish-item-img"
+          />
+          <div class="most-ordered__dish-info">
+            <div class="most-ordered__dish-name">
+              Spicy seasoned seafood noodles
+            </div>
+            <div class="most-ordered__dish-amount">200 dishes ordered</div>
+          </div>
+        </li>
+      </ul>
+      <button class="most-ordered__dish-btn" type="button">View All</button>
+    </div>
+    <div class="most-type additional">
+      <div class="most-type__head additional-head">
+        <div class="most-type__title additional-title">Most Type of Order</div>
+        <select class="most-ordered__btn btn" name="dayMostOrdered" id="">
+          <option selected value="today">Today</option>
+          <option value="yesterday">Yesterday</option>
+          <option value="">Select Day</option>
+        </select>
+      </div>
+      <div id="most-type__additional-diagram-1" class="most-type__diagram"></div>
+      <div id="most-type__additional-diagram-2" class="most-type__diagram"></div>
+      <div id="most-type__additional-diagram-3" class="most-type__diagram"></div>
+
     </div>
   </div>
 </main>

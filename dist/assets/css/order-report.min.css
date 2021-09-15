@@ -1,0 +1,81 @@
+.order-report {
+  height: 530px;
+  overflow: auto;
+  scrollbar-width: none;
+  margin-top: 24px;
+  background: #1F1D2B;
+  border-radius: 8px; }
+  .order-report__head {
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .order-report__title {
+    margin-left: 24px;
+    font-weight: 600;
+    font-size: 20px; }
+  .order-report__filter-btn {
+    margin-right: 16px;
+    background: url(../images/report-order-report-ico.svg) 10px 50% no-repeat; }
+
+.order-report__table {
+  width: 100%;
+  margin-top: 16px;
+  font-weight: 600; }
+  .order-report__table td,
+  .order-report__table th {
+    padding-left: 24px; }
+  .order-report__table tbody {
+    color: #e0e6e9;
+    text-align: left; }
+
+.order-report__table-head {
+  position: relative;
+  border-bottom: 1px solid #393c49; }
+  .order-report__table-head th {
+    padding-bottom: 16px; }
+
+.order-report__avatar {
+  transform: translateY(-17%);
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 16px; }
+  .order-report__avatar-wrapper {
+    display: flex; }
+
+.order-report__menu {
+  width: 137px; }
+
+.order-report__status {
+  font-weight: 500;
+  line-height: 130%;
+  border-radius: 30px;
+  width: 91px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .order-report__status-wrapper {
+    padding-right: 24px; }
+  .order-report__status--completed {
+    color: #50d1aa;
+    background: rgba(107, 226, 190, 0.24); }
+  .order-report__status--preparing {
+    color: #9290fe;
+    background: rgba(146, 144, 254, 0.2); }
+  .order-report__status--pending {
+    color: #ffb572;
+    background: rgba(255, 181, 114, 0.2); }
+
+.order-report__menu,
+.order-report__payment,
+.order-report__status-wrapper {
+  vertical-align: top; }
+
+.order-report__order td {
+  padding-bottom: 26px; }
+
+.order-report__order:nth-of-type(2) td {
+  padding-top: 32px; }

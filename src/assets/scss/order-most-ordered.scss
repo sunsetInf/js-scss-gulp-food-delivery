@@ -1,0 +1,58 @@
+@import "vars";
+main{
+  display: flex;
+}
+.most-ordered {
+  &__head {
+  }
+  &__title {
+  }
+  &__btn {
+    background: url(../images/select-arrow.png) 10px 50% no-repeat;
+    padding: 14px 14px 14px 44px;
+    appearance: none;
+    width: 105px;
+  }
+  &__dish-list {
+  }
+  &__dish-item {
+    display: flex;
+    margin-top: 20px;
+    & + & {
+      margin-top: 24px;
+    }
+  }
+  &__dish-item-img {
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+  }
+  &__dish-info {
+    margin-left: 16px;
+    width: 250px;
+  }
+  &__dish-name {
+    font-weight: 500;
+    color: #e0e6e9;
+    line-height: 130%;
+  }
+  &__dish-amount {
+    font-size: 12px;
+    color: #abbbc2;
+    margin-top: 4px;
+  }
+  &__dish-btn {
+    width: 100%;
+    font-weight: 600;
+    color: #ea7c69;
+    padding: 14px 0;
+    background: none;
+    border: 1px solid #ea7c69;
+    border-radius: 8px;
+    margin-top: 32px;
+  }
+}
+#most-type__additional-diagram {
+  width: 300px;
+  height: 300px;
+}

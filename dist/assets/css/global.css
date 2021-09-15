@@ -158,6 +158,18 @@ body {
     margin: 24px 24px 0 13px;
 }
 
+.btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    padding: 14px 14px 14px 44px;
+    border: 1px solid #393c49;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
 .sidenav {
     margin-top: 20px;
     position: fixed;

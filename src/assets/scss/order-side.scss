@@ -1,7 +1,6 @@
 @import "vars";
 
 .order {
-  
   height: 100vh;
   max-width: $orderWidth;
   position: fixed;
@@ -74,12 +73,10 @@
       padding-bottom: 24px;
       font-weight: 600;
       font-size: 16px;
+      text-align: right;
       border-bottom: 1px solid #393c49;
       &:nth-child(1) {
         text-align: left;
-      }
-      &:nth-child(3) {
-        text-align: right;
       }
     }
     & tbody {
@@ -99,7 +96,7 @@
   &__info-wrapper {
     width: 140px;
     margin-left: 8px;
-    margin-right: 60px;
+    // margin-right: 60px
   }
   &__dish-title {
     font-weight: 500;
@@ -117,7 +114,7 @@
   &__item-quantity {
     vertical-align: top;
     &__inner {
-      display: inline-flex;
+      // display: inline-flex;
       & input {
         margin-top: 24px;
         outline: none;
